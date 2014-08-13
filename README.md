@@ -1,2 +1,4 @@
-squares-support-website
+Squares support website
 =======================
+
+http://squares.sempe.net/
