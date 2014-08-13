@@ -120,6 +120,13 @@ h1 {
     width: 300px; 
     height: 150px; 
     color: white;
+    background-color: #c0392b;
+    z-index: -100;
+
+    -webkit-animation: background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Safari 4+ */
+    -moz-animation:    background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Fx 5+ */
+    -o-animation:      background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Opera 12+ */
+    animation:         background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* IE 10+, Fx 29+ */
 }
 
 #message > #title {
@@ -134,6 +141,67 @@ h1 {
     font-weight: normal;
 }
 
+@-webkit-keyframes triangle-position-scheme {
+  0%    {top: 150px; opacity: 1.0;}
+  20%   {top: 150px; opacity: 1.0;}
+  25%   {top: 300px; opacity: 1.0;}
+  26%   {top: 300px; opacity: 0.0;}
+  27%   {top:   0px; opacity: 0.0;}
+  28%   {top:   0px; opacity: 1.0;}
+  33%   {top: 150px; opacity: 1.0;}
+  53%   {top: 150px; opacity: 1.0;}
+  58%   {top: 300px; opacity: 1.0;}
+  59%   {top: 300px; opacity: 0.0;}
+  60%   {top:   0px; opacity: 0.0;}
+  61%   {top:   0px; opacity: 1.0;}
+  66%   {top: 150px; opacity: 1.0;}
+}
+@-moz-keyframes triangle-position-scheme {
+  0%    {top: 150px; opacity: 1.0;}
+  20%   {top: 150px; opacity: 1.0;}
+  25%   {top: 300px; opacity: 1.0;}
+  26%   {top: 300px; opacity: 0.0;}
+  27%   {top:   0px; opacity: 0.0;}
+  28%   {top:   0px; opacity: 1.0;}
+  33%   {top: 150px; opacity: 1.0;}
+  53%   {top: 150px; opacity: 1.0;}
+  58%   {top: 300px; opacity: 1.0;}
+  59%   {top: 300px; opacity: 0.0;}
+  60%   {top:   0px; opacity: 0.0;}
+  61%   {top:   0px; opacity: 1.0;}
+  66%   {top: 150px; opacity: 1.0;}
+}
+@-o-keyframes triangle-position-scheme {
+  0%    {top: 150px; opacity: 1.0;}
+  20%   {top: 150px; opacity: 1.0;}
+  25%   {top: 300px; opacity: 1.0;}
+  26%   {top: 300px; opacity: 0.0;}
+  27%   {top:   0px; opacity: 0.0;}
+  28%   {top:   0px; opacity: 1.0;}
+  33%   {top: 150px; opacity: 1.0;}
+  53%   {top: 150px; opacity: 1.0;}
+  58%   {top: 300px; opacity: 1.0;}
+  59%   {top: 300px; opacity: 0.0;}
+  60%   {top:   0px; opacity: 0.0;}
+  61%   {top:   0px; opacity: 1.0;}
+  66%   {top: 150px; opacity: 1.0;}
+}
+@keyframes triangle-position-scheme {
+  0%    {top: 150px; opacity: 1.0;}
+  20%   {top: 150px; opacity: 1.0;}
+  25%   {top: 300px; opacity: 1.0;}
+  26%   {top: 300px; opacity: 0.0;}
+  27%   {top:   0px; opacity: 0.0;}
+  28%   {top:   0px; opacity: 1.0;}
+  33%   {top: 150px; opacity: 1.0;}
+  53%   {top: 150px; opacity: 1.0;}
+  58%   {top: 300px; opacity: 1.0;}
+  59%   {top: 300px; opacity: 0.0;}
+  60%   {top:   0px; opacity: 0.0;}
+  61%   {top:   0px; opacity: 1.0;}
+  66%   {top: 150px; opacity: 1.0;}
+}
+
 #triangle
 {
     position: absolute;
@@ -143,6 +211,12 @@ h1 {
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
     border-top: 150px solid white;
+    z-index: -101;
+
+    -webkit-animation: triangle-position-scheme 24s infinite; /* Safari 4+ */
+    -moz-animation:    triangle-position-scheme 24s infinite; /* Fx 5+ */
+    -o-animation:      triangle-position-scheme 24s infinite; /* Opera 12+ */
+    animation:         triangle-position-scheme 24s infinite; /* IE 10+, Fx 29+ */
 }
 
 
