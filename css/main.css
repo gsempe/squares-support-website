@@ -65,8 +65,33 @@ body {
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
+@-webkit-keyframes background-color-scheme {
+  0%   {background-color: #c0392b;}
+  33%   {background-color: #2980b9;}
+  66%   {background-color: #2c3e50;}
+}
+@-moz-keyframes background-color-scheme {
+  0%   {background-color: #c0392b;}
+  33%   {background-color: #2980b9;}
+  66%   {background-color: #2c3e50;}
+}
+@-o-keyframes background-color-scheme {
+  0%   {background-color: #c0392b;}
+  33%   {background-color: #2980b9;}
+  66%   {background-color: #2c3e50;}
+}
+@keyframes background-color-scheme {
+  0%   {background-color: #c0392b;}
+  33%   {background-color: #2980b9;}
+  66%   {background-color: #2c3e50;}
+}
+
 body {
     background-color: #c0392b;
+    -webkit-animation: background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Safari 4+ */
+    -moz-animation:    background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Fx 5+ */
+    -o-animation:      background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* Opera 12+ */
+    animation:         background-color-scheme 24s infinite cubic-bezier(.85,0,1,0); /* IE 10+, Fx 29+ */
 }
 
 h1 {
@@ -74,17 +99,26 @@ h1 {
     margin: 0;
 }
 
-#message
+#center
 {
     position: absolute;
     margin: auto;
     top: 0;
     right: 0;
-    bottom: 400px;
+    bottom: 0;
     left: 0;
+
     width: 300px; 
-    height: 100px; 
-    z-index: -998;
+    height: 300px; 
+    z-index: -999;
+    overflow: hidden;
+}
+
+#message
+{
+    position: absolute;
+    width: 300px; 
+    height: 150px; 
     color: white;
 }
 
@@ -102,19 +136,13 @@ h1 {
 
 #triangle
 {
-position: absolute;
-    margin: auto;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-     width: 0; 
+    position: absolute;
+    top: 150px;
+    width: 0; 
     height: 0; 
     border-left: 150px solid transparent;
     border-right: 150px solid transparent;
-
     border-top: 150px solid white;
-    z-index: -999;
 }
 
 
