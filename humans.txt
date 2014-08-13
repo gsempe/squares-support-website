@@ -3,11 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Guillaume Sempe -- developer -- gsempe
 
 # THANKS
 
-    <name>
+    Andrey Shevchuk
 
 # TECHNOLOGY COLOPHON
 
