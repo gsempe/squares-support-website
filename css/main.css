@@ -132,6 +132,7 @@ h1 {
     color: white;
     background-color: #c0392b;
 
+    text-shadow: 0 0 15px #000, 0 0 6px #000, 0 0 1px #000;
     z-index: 1;
 
     -webkit-transform: translatez(1px);
@@ -154,7 +155,7 @@ h1 {
 
 #message > #tagline {
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1.1em;
     font-weight: normal;
 }
 
